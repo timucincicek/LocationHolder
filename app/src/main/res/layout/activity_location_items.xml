@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="378dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="81dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/imgPlace"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgPlace"
+        android:layout_width="186dp"
+        android:layout_height="195dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="43dp"
+        app:layout_constraintEnd_toStartOf="@+id/getimage"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText3"
+        app:srcCompat="@android:drawable/sym_def_app_icon" />
+
+    <Button
+        android:id="@+id/getimage"
+        android:layout_width="134dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="38dp"
+        android:text="Get Image"
+        app:layout_constraintBottom_toTopOf="@+id/saveBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPlace"
+        app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:layout_width="134dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="259dp"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgPlace"
+        app:layout_constraintTop_toBottomOf="@+id/getimage" />
+</android.support.constraint.ConstraintLayout>
